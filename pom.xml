@@ -10,16 +10,25 @@
   <url>http://maven.apache.org</url>
   
   <dependencies>
+    <!-- JUnit 5 -->
     <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>5.9.3</version> <!-- Updated version -->
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-api</artifactId>
+      <version>5.9.2</version> <!-- Valid version for JUnit 5 -->
       <scope>test</scope>
     </dependency>
     <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-engine</artifactId>
+      <version>5.9.2</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- Servlet API -->
+    <dependency>
         <groupId>javax.servlet</groupId>
         <artifactId>javax.servlet-api</artifactId>
-        <version>4.0.1</version> <!-- Add Servlet API -->
+        <version>4.0.1</version>
         <scope>provided</scope>
     </dependency>
   </dependencies>
